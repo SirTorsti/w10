@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-
+import '../styles/About.css'
 
 const About = () => {
     interface Post {
@@ -20,12 +20,14 @@ useEffect(() => {
   return (
     <div>
       <h2>About</h2>
-      {posts.map(post => (
-            <div key={post.id}>
-                <h3>{post.title}</h3>
-                <p>{post.body}</p>
-            </div>
-      ))}
+      <div className="grid-container">
+        {posts.map(post => (
+              <div key={post.id} className="grid-item">
+                  <h3>{post.title}</h3>
+                  <p>{post.body}</p>
+              </div>
+        ))}
+      </div>
     </div>
   )
 }
