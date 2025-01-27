@@ -14,8 +14,8 @@ const Header = () => {
         <ul className = "nav-list">
             <li><a href="/">{t('Home')}</a></li>
             <li><a href="/about">{t('About')}</a></li>
-            <button onClick={() => changeLanguage("fi")}>FI</button>
-            <button onClick={() => changeLanguage("en")}>EN</button>
+            <button id="fi"onClick={() => changeLanguage("fi")}>FI</button>
+            <button id="en" onClick={() => changeLanguage("en")}>EN</button>
         </ul>
       </nav>
     </header>
